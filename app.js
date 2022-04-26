@@ -17,3 +17,47 @@ recept-hodnoceni, recept-nazev, recept-popis.
 
 6) Poslední vybraný recept ulož do Local Storage, aby se při novém otevření aplikace načetl.
 */
+
+
+
+function vypisRecepty(){
+    
+}
+
+for (let i=0; i < recepty.length; i++) {
+  const nazevReceptu = document.createElement("div")
+  nazevReceptu.classList.add("recept-info")
+  nazevReceptu.textContent = recepty[i].nadpis
+    
+  const fotoReceptu = document.querySelector(".recept-obrazek")
+  fotoReceptu.src = recepty[i].img
+}
+// let receptySeznam = document.getElementById(recepty)
+
+// const JedenRecept = (props) => {
+//   const element = document.createElement('div');
+//   element.classList.add('recept');
+//   element.innerHTML = `
+//     <div class="recept-obrazek">
+//       <img src=${props.img} alt="Obrazek">
+//     </div>
+
+//     <div class="recept-info">
+//       <h3>${props.nadpis}</h3>
+//     </div>
+//   `;
+
+//   return element
+// }
+
+// const VypisRecepty = (props) => {
+//   const element = document.createElement('div');
+//   element.classList.add('recepty');
+
+//   for (let i = 0; i < recepty.length; i += 1) {
+//     element.appendChild(JedenRecept(recepty[i]));
+//   }
+
+//   return element;
+// };
+
