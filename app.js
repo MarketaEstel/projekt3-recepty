@@ -202,3 +202,17 @@ seradPodleHodnoceni.sort()
 console.log(seradPodleHodnoceni)
 }
 
+//const recepty už mám v druhém JS const recepty - je to pole
+const inputFilter = document.querySelector(".hledani") //naše pole pro hledání
+console.log(inputFilter)
+
+const receptySearch = []
+
+//pridatData()
+
+inputFilter.addEventListener("input", function(e){
+  console.log(e.target.value)   
+  receptyFilter(e.target.value) 
+})
+
+//console.log(e.target.value) toto mi vypisuje v konzoli, co píšu do inputu a potřebuji to poslat do funkce
